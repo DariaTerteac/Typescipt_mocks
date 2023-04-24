@@ -1,0 +1,1 @@
+Example-2 has a method that checks if person's birthday is today or not and prints the corresponding message. In tests I verify if 'checkBirthday' method print messages correctly via spying on 'printMessage' method.

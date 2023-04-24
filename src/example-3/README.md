@@ -1,0 +1,1 @@
+Example-3 describes Cleaning service with main method the 'makeOrder' that can be used for different cleaning options. In tests I provide different options and verify if they were called correct number of times.
