@@ -1,5 +1,3 @@
-import { Person } from "./person";
-
 export default class BirthdayService {
     public static checkBirthday(person: Person) {
         if (person.birthDay.getDate() === new Date().getDate()) {
@@ -12,4 +10,9 @@ export default class BirthdayService {
     public static printMessage(message: string) {
         console.log(message);
     }
-} 
+}
+
+export interface Person {
+    name: string;
+    birthDay: Date;
+}

@@ -1,5 +1,3 @@
-import House from "./house";
-
 export default class CleaningService {
     public static makeOrder(house: House, service?: Service) {
         switch (service) {
@@ -42,9 +40,19 @@ export default class CleaningService {
         console.log(`The kitchen at ${house.address} is clean!`);
     }
 }
+
 export enum Service {
     CleanHouse,
     CleanSofa,
     CleanBathroom,
     CleanKitchen
+}
+
+export interface Owner {
+    name: string;
+}
+
+export interface House {
+    address: string;
+    owner: Owner;
 }

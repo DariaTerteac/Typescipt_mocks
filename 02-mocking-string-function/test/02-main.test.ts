@@ -1,6 +1,6 @@
-import BirthdayService from "../src/example-2/birthday-service";
-import { Person } from "../src/example-2/person";
+import BirthdayService, { Person } from "../src/main";
 import { PersonBirthdayTestData } from "../src/test-data/data-for-tests";
+
 
 describe('birthday tests', () => {
     //Arrange
