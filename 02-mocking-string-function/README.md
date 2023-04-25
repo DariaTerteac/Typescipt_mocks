@@ -1,2 +1,2 @@
-Example-2 describes a method that checks if person's birthday is today or not and prints the corresponding message. 
-In tests I verify if this method prints messages correctly via spying on the method it is calling for printing.
+Example-2 describes a class that checks if person's birthday is today or not and prints the corresponding message. 
+In tests I verify if it prints messages correctly via spying on the method it is calling for printing.
