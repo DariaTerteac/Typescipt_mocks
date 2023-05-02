@@ -5,8 +5,8 @@ beforeAll(() => {
   jest.spyOn(MyClass.prototype, 'acceptLambda').mockImplementation(mockedAcceptLambda);    //mocking each object of MyClass
 })
 
-describe('check MyClass', () => {
-  it('should call lambda func', () => {
+describe('check MyClass with simple lambda function', () => {
+  it('should call mocked lambda function', () => {
     //Act
     const myAttribute = main();    //calling mocked version of acceptLambda
 
