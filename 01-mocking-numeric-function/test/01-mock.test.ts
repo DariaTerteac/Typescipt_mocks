@@ -1,4 +1,4 @@
-import sumAndIncreaseResultOnTwo from "../src/main";
+import functionB from "../src/main";
 import SummTestData from "../src/test-data/data-for-tests";
 
 describe(`summ two number and add 2`, () => {
@@ -15,7 +15,7 @@ describe(`summ two number and add 2`, () => {
     it(`should summ two number ${testData.x} and ${testData.y} and plus 2 with correct ${testData.expectedResult}`, () => {
 
       //Act
-      const result = sumAndIncreaseResultOnTwo(testData.x, testData.y);
+      const result = functionB(testData.x, testData.y);
 
       //Assert
       expect(sumMock(testData.x, testData.y)).toBe(testData.expectedResult - 2);

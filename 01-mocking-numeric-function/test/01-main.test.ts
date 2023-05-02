@@ -1,4 +1,4 @@
-import { summ } from "../src/main";
+import { functionA } from "../src/main";
 import SummTestData from "../src/test-data/data-for-tests";
 
 describe('summ of two numbers', () => {
@@ -12,7 +12,7 @@ describe('summ of two numbers', () => {
     it(`should summ two numbers ${testData.x} and ${testData.y} correctly with expected result ${testData.expectedResult}`, () => {
 
       //Act
-      const result = summ(testData.x, testData.y);
+      const result = functionA(testData.x, testData.y);
 
       //Assert
       expect(result).toBe(testData.expectedResult);
