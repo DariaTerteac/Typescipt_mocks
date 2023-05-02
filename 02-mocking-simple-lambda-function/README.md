@@ -1,2 +1,1 @@
-Example-3 describes main method 'makeOrder' that invokes enum and switch statement to call the corresponding methods based on the enum member.
-In tests I use 'jest.spyOn()' to mock methods and check if they were called correct number of times when 'makeOrder' is invoked with each test data object.
+Example-2 describes method that accepts lambda function. In order to test if lambda function is working correctly I use jest.spyOn() to mock each object and pass mocked implementation. Then I verify if mocked implementation was called. 
