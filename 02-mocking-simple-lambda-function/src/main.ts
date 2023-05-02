@@ -4,7 +4,7 @@ export class MyClass {                                     //NOT TESTING MYCLASS
     }
 }
 
-export function myMain() {
+export function main() {
     const myClass = new MyClass();
     return myClass.acceptLambda(                                   //need to mock this (acceptLambda)
         (input) => {

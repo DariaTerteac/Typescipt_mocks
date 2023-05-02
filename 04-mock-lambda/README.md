@@ -1,2 +1,0 @@
-Example-3 describes main method 'makeOrder' that invokes enum and switch statement to call the corresponding methods based on the enum member.
-In tests I use 'jest.spyOn()' to mock methods and check if they were called correct number of times when 'makeOrder' is invoked with each test data object.

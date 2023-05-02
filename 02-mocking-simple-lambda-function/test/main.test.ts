@@ -1,5 +1,4 @@
-
-import { MyClass, myMain } from "../src/my-main";
+import { MyClass, main } from "../src/main";
 
 beforeAll(() => {
   const mockedAcceptLambda = jest.fn((str: (str: string) => string) => "mocked string");   //lambda replacement
@@ -9,7 +8,7 @@ beforeAll(() => {
 describe('check MyClass', () => {
   it('should call lambda func', () => {
     //Act
-    const myAttribute = myMain();    //calling mocked version of acceptLambda
+    const myAttribute = main();    //calling mocked version of acceptLambda
 
     //Assert
     expect(myAttribute).toBe("mocked string");   //check if mocked version was really called
