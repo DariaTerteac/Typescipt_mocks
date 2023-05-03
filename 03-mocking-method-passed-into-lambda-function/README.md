@@ -1,1 +1,1 @@
-Example-3 describes 
+Example-3 describes main function which instantialize Classes A and B and calls their methods doSomethingA and doSomethingB which contain lambda functions that call methods getSomethingB and getSomethingA respectively.
