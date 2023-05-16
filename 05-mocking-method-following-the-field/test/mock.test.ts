@@ -1,16 +1,26 @@
-import { InnerClass } from "../src/inner-class";
 import { main } from "../src/main";
 
-InnerClass.prototype.acceptLambda = jest.fn().mockImplementation(() => "mocked string");
+beforeEach(() => {
+  jest.clearAllMocks();
+});
 
-describe("check MyClass with simple lambda function", () => {
-    it("should call mocked lambda function", () => {
+// Mock the InnerClass
+jest.mock('../src/inner-class', () => {
+  return {
+    InnerClass: jest.fn().mockImplementation(() => {
+      return {
+        acceptLambda: jest.fn(() => "mocked string"),
+      };
+    }),
+  };
+});
 
-      //Act
-      const myAttribute = main(); //calling mocked version of acceptLambda
-  
-      //Assert
-      expect(myAttribute).toBe("mocked string"); //check if mocked version was really called
-      jest.clearAllMocks();
-    });
+describe('main', () => {
+  it('should return the input string', () => {
+    // Act
+    const result = main();
+
+    // Assert
+    expect(result).toBe("mocked string")
   });
+});
