@@ -1,0 +1,1 @@
+Example-2 describes method that accepts lambda function. In order to test if lambda function is working correctly I use jest.spyOn() to mock each object and pass mocked implementation. Then I verify if mocked implementation was called.

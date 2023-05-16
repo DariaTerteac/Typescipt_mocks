@@ -2,7 +2,6 @@
 /out/
 /build/
 /node_modules/
-/04-mocking-simple-client-server/
 .env
 .env.local
 .vscode/
