@@ -5,4 +5,4 @@
 | Example 1   | Use of  'jest.fn()' and 'jest.spyOn()' to mock simple numeric function  
 | Example 2   | Use of  'jest.spyOn()' to replace method implementation for each object of a class <br> with mocked lambda function
 | Example 3   | Use of  'jest.fn()' to mock method which is passed to a lambda function
-| Example 4   | Mocking method which is previoused with a field using 'jest.spyOn()' and 'jest.mock()'
+| Example 4   | Mocking method which is preceded by a field using 'jest.spyOn()' and 'jest.mock()'
