@@ -18,6 +18,5 @@ describe("check MyClass with simple lambda function", () => {
 
     //Assert
     expect(myAttribute).toBe("mocked string");           //check if mocked version was really called
-    jest.clearAllMocks();
   });
 });
